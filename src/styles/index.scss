@@ -1,0 +1,14 @@
+@use 'reset';
+@use 'vars';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+  font-family: 'Noto Serif';
+  background-color: vars.$white;
+  color: vars.$black;
+
+  ::selection {
+    background-color: vars.$mainColor;
+    color: vars.$white;
+  }
+}
