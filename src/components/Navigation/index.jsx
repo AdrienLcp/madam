@@ -19,6 +19,11 @@ const Navigation = () => {
     toggleRef.current.classList.toggle('opened');
   };
 
+  const closeMenu = () => {
+    menuRef.current.classList.remove('opened');
+    toggleRef.current.classList.remove('opened');
+  };
+
   return (
     <nav className='navigation'>
 
@@ -51,6 +56,9 @@ const Navigation = () => {
           <NavLink
             className='navigation--buttons--item'
             to='/'
+            onClick={() => {
+              closeMenu();
+            }}
           >
             <p className='navigation--buttons--item--label'>
               Accueil
@@ -66,6 +74,9 @@ const Navigation = () => {
           <NavLink
             className='navigation--buttons--item'
             to='/a-propos'
+            onClick={() => {
+              closeMenu();
+            }}
           >
             <p className='navigation--buttons--item--label'>
               À propos
@@ -81,6 +92,9 @@ const Navigation = () => {
           <NavLink
             className='navigation--buttons--item'
             to='/contact'
+            onClick={() => {
+              closeMenu();
+            }}
           >
             <p className='navigation--buttons--item--label'>
               Contact
@@ -96,6 +110,9 @@ const Navigation = () => {
           <NavLink
             className='navigation--buttons--item'
             to='/'
+            onClick={() => {
+              closeMenu();
+            }}
           >
             <p className='navigation--buttons--item--label'>
               Offre

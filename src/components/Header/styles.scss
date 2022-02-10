@@ -1,0 +1,11 @@
+@use '../../styles/vars';
+
+.header {
+  &--title {
+    display: none;
+  }
+
+  &--img {
+    width: 100vw;
+  }
+}
