@@ -1,0 +1,8 @@
+@use '../../styles/vars';
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4em 0 100px 0;
+}

@@ -3,14 +3,28 @@
 .footer {
   position: absolute;
   bottom: 0;
+  background-color: vars.$white;
 
   &--title {
     display: none;
   }
 
-  &--img {
+  &--container {
     width: 100vw;
-    position: absolute;
-    bottom: 0;
+    display: flex;
+    justify-content: center;
+
+    &--img {
+      transform: rotateY(180deg);
+      margin-bottom: 1em;
+      height: 50px;
+      perspective: 2000px;
+      perspective-origin: bottom;
+      transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+
+      &:hover {
+        transform: rotateY(0);
+      }
+    }
   }
 }

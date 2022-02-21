@@ -19,11 +19,6 @@ const Navigation = () => {
     toggleRef.current.classList.toggle('opened');
   };
 
-  const closeMenu = () => {
-    menuRef.current.classList.remove('opened');
-    toggleRef.current.classList.remove('opened');
-  };
-
   return (
     <nav className='navigation'>
 
@@ -54,81 +49,65 @@ const Navigation = () => {
       <ul className='navigation--buttons' ref={menuRef}>
         <li>
           <NavLink
-            className='navigation--buttons--item'
+            className={(navData) => navData.isActive ? 'navigation--buttons--item selected' : 'navigation--buttons--item'}
             to='/'
-            onClick={() => {
-              closeMenu();
-            }}
           >
-            <p className='navigation--buttons--item--label'>
-              Accueil
-            </p>
             <img
               className='navigation--buttons--item--icon'
               alt="Retourner à l'accueil"
               src={home}
             />
+            <p className='navigation--buttons--item--label'>
+              Accueil
+            </p>
           </NavLink>
         </li>
         <li>
           <NavLink
-            className='navigation--buttons--item'
-            to='/a-propos'
-            onClick={() => {
-              closeMenu();
-            }}
+            className={(navData) => navData.isActive ? 'navigation--buttons--item selected' : 'navigation--buttons--item'}
+            to='/a_propos'
           >
-            <p className='navigation--buttons--item--label'>
-              À propos
-            </p>
             <img
               className='navigation--buttons--item--icon'
               alt="À propos de nous"
               src={about}
             />
+            <p className='navigation--buttons--item--label'>
+              À propos
+            </p>
           </NavLink>
         </li>
         <li>
           <NavLink
-            className='navigation--buttons--item'
+            className={(navData) => navData.isActive ? 'navigation--buttons--item selected' : 'navigation--buttons--item'}
             to='/contact'
-            onClick={() => {
-              closeMenu();
-            }}
           >
-            <p className='navigation--buttons--item--label'>
-              Contact
-            </p>
             <img
               className='navigation--buttons--item--icon'
               alt="Nous contacter"
               src={contact}
             />
+            <p className='navigation--buttons--item--label'>
+              Contact
+            </p>
           </NavLink>
         </li>
         <li>
           <NavLink
-            className='navigation--buttons--item'
-            to='/'
-            onClick={() => {
-              closeMenu();
-            }}
+            className={(navData) => navData.isActive ? 'navigation--buttons--item selected' : 'navigation--buttons--item'}
+            to='/offre'
           >
-            <p className='navigation--buttons--item--label'>
-              Offre
-            </p>
             <img
               className='navigation--buttons--item--icon'
               alt="Voir notre offre"
               src={offer}
             />
+            <p className='navigation--buttons--item--label'>
+              Offre
+            </p>
           </NavLink>
         </li>
       </ul>
-
-
-
-
     </nav>
   );
 };
