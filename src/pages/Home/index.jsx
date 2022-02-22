@@ -44,7 +44,6 @@ const Home = () => {
             to='/offre/data_science'
             className='home--presentation--list--item'
           >
-
             <h3 className='home--presentation--list--item--title'>
               Data Science
             </h3>
@@ -65,7 +64,6 @@ const Home = () => {
             to='/offre/lean_six_sigma'
             className='home--presentation--list--item'
           >
-
             <h3 className='home--presentation--list--item--title'>
               Lean Six Sigma
             </h3>
@@ -81,13 +79,11 @@ const Home = () => {
                 <p>✔ Industrie ou service</p>
               </li>
             </ul>
-
           </NavLink>
           <NavLink
             to='/offre/conduite_de_projets'
             className='home--presentation--list--item'
           >
-
             <h3 className='home--presentation--list--item--title'>
               Conduite de projets
             </h3>

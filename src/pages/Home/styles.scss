@@ -13,6 +13,9 @@
     width: 90vw;
     max-width: 500px;
     margin-top: 1em;
+    transform: translate(30px, 30px);
+    opacity: 0;
+    animation: apparition 0.5s ease-out forwards;
 
     &--label {
       margin: 2em 0 1em 0;
@@ -26,6 +29,9 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      transform: translateY(30px);
+      opacity: 0;
+      animation: apparition 1s 0.5s ease-out forwards;
 
       &--icon {
         width: 50px;
@@ -49,6 +55,10 @@
     &--list {
       display: flex;
       flex-direction: column;
+      opacity: 0;
+      transform: translateY(30px);
+      opacity: 0;
+      animation: apparition 1s 0.5s ease-out forwards;
 
       &--item {
         background-color: vars.$mainColor;
@@ -81,9 +91,10 @@
 
 @media screen and (min-width: 850px) {
   .home {
+    margin-top: 6em;
+
     &--presentation {
       max-width: 1500px;
-      margin-top: 10em;
 
       &--label {
         font-size: 1.2em;
@@ -103,7 +114,7 @@
       }
 
       &--list {
-        height: 500px;
+        height: 200px;
 
         &--item {
           width: 350px;

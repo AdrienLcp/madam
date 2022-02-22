@@ -1,6 +1,10 @@
 @use '../../styles/vars';
 
 .header {
+  transform: translateY(-100px);
+  opacity: 0;
+  animation: apparition 1s 1s ease-out forwards;
+
   &--title {
     position: absolute;
     visibility: hidden;
