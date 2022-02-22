@@ -28,7 +28,7 @@ const Navigation = () => {
         onClick={() => {
           toggleMenu();
         }}
-      > 
+      >
         <img
           className='navigation--toggle--line-1'
           alt="Trait pour l'icône du menu"
@@ -52,11 +52,13 @@ const Navigation = () => {
             className={(navData) => navData.isActive ? 'navigation--buttons--item selected' : 'navigation--buttons--item'}
             to='/'
           >
-            <img
-              className='navigation--buttons--item--icon'
-              alt="Retourner à l'accueil"
-              src={home}
-            />
+            <div className='navigation--buttons--item--icon'>
+              <img
+                className='navigation--buttons--item--icon--img'
+                alt="Retourner à l'accueil"
+                src={home}
+              />
+            </div>
             <p className='navigation--buttons--item--label'>
               Accueil
             </p>
@@ -67,11 +69,13 @@ const Navigation = () => {
             className={(navData) => navData.isActive ? 'navigation--buttons--item selected' : 'navigation--buttons--item'}
             to='/a_propos'
           >
-            <img
-              className='navigation--buttons--item--icon'
-              alt="À propos de nous"
-              src={about}
-            />
+            <div className='navigation--buttons--item--icon'>
+              <img
+                className='navigation--buttons--item--icon--img'
+                alt="À propos de nous"
+                src={about}
+              />
+            </div>
             <p className='navigation--buttons--item--label'>
               À propos
             </p>
@@ -82,11 +86,13 @@ const Navigation = () => {
             className={(navData) => navData.isActive ? 'navigation--buttons--item selected' : 'navigation--buttons--item'}
             to='/contact'
           >
-            <img
-              className='navigation--buttons--item--icon'
-              alt="Nous contacter"
-              src={contact}
-            />
+            <div className='navigation--buttons--item--icon'>
+              <img
+                className='navigation--buttons--item--icon--img'
+                alt="Nous contacter"
+                src={contact}
+              />
+            </div>
             <p className='navigation--buttons--item--label'>
               Contact
             </p>
@@ -97,11 +103,13 @@ const Navigation = () => {
             className={(navData) => navData.isActive ? 'navigation--buttons--item selected' : 'navigation--buttons--item'}
             to='/offre'
           >
-            <img
-              className='navigation--buttons--item--icon'
-              alt="Voir notre offre"
-              src={offer}
-            />
+            <div className='navigation--buttons--item--icon'>
+              <img
+                className='navigation--buttons--item--icon--img'
+                alt="Voir notre offre"
+                src={offer}
+              />
+            </div>
             <p className='navigation--buttons--item--label'>
               Offre
             </p>

@@ -1,12 +1,12 @@
 @use '../../styles/vars';
 
 .footer {
-  position: absolute;
-  bottom: 0;
   background-color: vars.$white;
-
+  margin: 80px 0;
+  
   &--title {
-    display: none;
+    position: absolute;
+    visibility: hidden;
   }
 
   &--container {
@@ -26,5 +26,11 @@
         transform: rotateY(0);
       }
     }
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .footer {
+    margin-bottom: 0;
   }
 }

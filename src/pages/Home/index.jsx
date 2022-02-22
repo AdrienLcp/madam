@@ -7,7 +7,6 @@ import ingenierie from '../../media/home/ingenierie.png';
 import nantes from '../../media/home/nantes.png';
 
 const Home = () => {
-
   return (
     <main className='home'>
       <section className='home--presentation'>
@@ -40,47 +39,72 @@ const Home = () => {
       <section className='home--presentation'>
         <p className='home--presentation--label'>Dans quels domaines ?</p>
 
-        <ul className='home--presentation--list'>
-          <li>
-            <NavLink
-              to='/offre/data_science'
-              className='home--presentation--list--item'
-            >
-              <h3 className='home--presentation--list--item--title'>
-                Data Science
-              </h3>
+        <div className='home--presentation--list'>
+          <NavLink
+            to='/offre/data_science'
+            className='home--presentation--list--item'
+          >
 
+            <h3 className='home--presentation--list--item--title'>
+              Data Science
+            </h3>
 
-              
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to='/offre/lean_six_sigma'
-              className='home--presentation--list--item'
-            >
-              <h3 className='home--presentation--list--item--title'>
-                Lean Six Sigma
-              </h3>
+            <ul className='home--presentation--list--item--prestations'>
+              <li className='home--presentation--list--item--prestations--label'>
+                <p>✔ Exploitation de données massives</p>
+              </li>
+              <li className='home--presentation--list--item--prestations--label'>
+                <p>✔ Modèles prédictifs (machine learning)</p>
+              </li>
+              <li className='home--presentation--list--item--prestations--label'>
+                <p>✔ Développement Python</p>
+              </li>
+            </ul>
+          </NavLink>
+          <NavLink
+            to='/offre/lean_six_sigma'
+            className='home--presentation--list--item'
+          >
 
+            <h3 className='home--presentation--list--item--title'>
+              Lean Six Sigma
+            </h3>
 
+            <ul className='home--presentation--list--item--prestations'>
+              <li className='home--presentation--list--item--prestations--label'>
+                <p>✔ Résolution de problèmes complexes</p>
+              </li>
+              <li className='home--presentation--list--item--prestations--label'>
+                <p>✔ Séquençage DMAIC</p>
+              </li>
+              <li className='home--presentation--list--item--prestations--label'>
+                <p>✔ Industrie ou service</p>
+              </li>
+            </ul>
 
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to='/offre/conduite_de_projets'
-              className='home--presentation--list--item'
-            >
-              <h3 className='home--presentation--list--item--title'>
-                Conduite de projets
-              </h3>
+          </NavLink>
+          <NavLink
+            to='/offre/conduite_de_projets'
+            className='home--presentation--list--item'
+          >
 
+            <h3 className='home--presentation--list--item--title'>
+              Conduite de projets
+            </h3>
 
-
-            </NavLink>
-          </li>
-        </ul>
+            <ul className='home--presentation--list--item--prestations'>
+              <li className='home--presentation--list--item--prestations--label'>
+                <p>✔ Cadrage initial</p>
+              </li>
+              <li className='home--presentation--list--item--prestations--label'>
+                <p>✔ Pilotage</p>
+              </li>
+              <li className='home--presentation--list--item--prestations--label'>
+                <p>✔ Accompagnement stratégique</p>
+              </li>
+            </ul>
+          </NavLink>
+        </div>
       </section>
     </main>
   );

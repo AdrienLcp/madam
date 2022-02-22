@@ -17,7 +17,7 @@
     z-index: 20;
     display: flex;
     justify-content: space-evenly;
-    background: black;
+    background: linear-gradient(#d5dfe5bd, vars.$white);
     width: 100vw;
     padding: 10px;
     transition: .3s;
@@ -35,7 +35,14 @@
         border: 2px solid vars.$mainColor;
         padding: 0.6em;
         height: 50px;
-        box-shadow: 2px 2px 10px vars.$black;
+        width: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &--img {
+          height: 100%;
+        }
       }
 
       &--label {
@@ -43,12 +50,23 @@
         margin-top: 4px;
         font-size: 10px;
         width: 5em;
-        color: vars.$white;
+        color: vars.$black;
+        font-weight: bold;
       }
 
       &:active {
         transform: scale(0.9);
       }
+    }
+  }
+
+  .selected {
+    .navigation--buttons--item--icon {
+      border-color: vars.$black;
+    }
+
+    .navigation--buttons--item--label {
+      color: vars.$mainColor;
     }
   }
 }
@@ -57,8 +75,8 @@
   .navigation {
     bottom: auto;
     right: auto;
-    top: 0;
-    left: 0;
+    top: 20px;
+    left: 20px;
 
     &--toggle {
       z-index: 30;
@@ -145,24 +163,21 @@
         }
 
         &--label {
+          margin-top: 0;
           position: absolute;
           z-index: 45;
-          padding: 1.2em;
-          color: vars.$white;
           opacity: 0;
           text-align: start;
-          border-radius: 25px;
-          padding-left: 3em;
-          height: 50px;
           width: 10em;
           transition: .3s;
-          color: vars.$black;
+          font-size: 15px;
+          transform: translateX(4.5em);
         }
 
         &:hover {
           .navigation--buttons--item--label {
             opacity: 1;
-            transform: translateX(5em);
+            transform: translateX(7.5em);
           }
 
           .navigation--buttons--item--icon {
@@ -172,10 +187,20 @@
         }
       }
     }
+
+    .selected {
+      .navigation--buttons--item--icon {
+        border-color: vars.$white;
+      }
+
+      .navigation--buttons--item--label {
+        color: vars.$black;
+      }
+    }
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1500px) {
   .navigation {
     top: 3em;
     left: 3em;
@@ -223,21 +248,24 @@
 
         &--icon {
           height: 60px;
+          width: 60px;
           padding: 1em;
         }
 
         &--label {
           font-size: 1em;
-          height: 60px;
-          border-radius: 50px;
         }
       }
     }
-  }
-}
 
-.selected {
-  .navigation--buttons--item--icon {
-    border-color: vars.$white;
+    .selected {
+      .navigation--buttons--item--icon {
+        border-color: vars.$white;
+      }
+
+      .navigation--buttons--item--label {
+        color: vars.$black;
+      }
+    }
   }
 }
