@@ -13,7 +13,7 @@
     width: 90vw;
     max-width: 500px;
     margin-top: 1em;
-    transform: translate(30px, 30px);
+    transform: translate(30px, 30px) scale(2);
     opacity: 0;
     animation: apparition 0.5s ease-out forwards;
 
