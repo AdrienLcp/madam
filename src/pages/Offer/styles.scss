@@ -1,0 +1,124 @@
+@use '../../styles/vars';
+
+.offer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &--container {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    max-width: 300px;
+
+    &--link {
+      margin: 1em 0;
+      background-color: vars.$mainColor;
+      border-radius: 5px;
+      padding: 1.5em 1em;
+      color: vars.$white;
+
+      &--title {
+        text-align: center;
+        margin-bottom: 1em;
+        font-weight: bold;
+        text-decoration: underline;
+      }
+
+      &--prestations {
+        &--label {
+          font-size: 0.7em;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .offer {
+    &--container {
+      margin-top: 35vh;
+      margin-bottom: 25vh;
+      height: 200px;
+      flex-direction: row;
+      max-width: none;
+      justify-content: center;
+
+      &--link {
+        margin: 0 1em;
+        padding: 2em;
+        width: 350px;
+        height: 100px;
+        transition: .3s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &--title {
+          font-size: 1.4em;
+          text-decoration: none;
+          margin-bottom: 0;
+          transition: .3s;
+          display: inline;
+
+          &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background: vars.$white;
+            transform: scale(0);
+            transition: transform 0.5s ease-in-out;
+          }
+        }
+
+        &--prestations {
+          opacity: 0;
+          position: absolute;
+          transition: .3s;
+
+          &--label {
+            font-size: 1em;
+          }
+        }
+
+        &:hover {
+          height: 170px;
+
+          .offer--container--link--title {
+            transform: translateY(-2em);
+
+            &::after {
+              transform: scale(1);
+            }
+          }
+
+          .offer--container--link--prestations {
+            opacity: 1;
+            transform: translateY(1em);
+          }
+        }
+      }
+    }
+  }
+}
+
+.link1 {
+  opacity: 0;
+  transform: translateX(-30px);
+  animation: apparition 1s ease-out forwards;
+}
+
+.link2 {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: apparition 1s ease-out forwards;
+}
+
+.link3 {
+  opacity: 0;
+  transform: translateX(30px);
+  animation: apparition 1s ease-out forwards;
+}

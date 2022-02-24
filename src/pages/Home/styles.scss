@@ -13,7 +13,7 @@
     width: 90vw;
     max-width: 500px;
     margin-top: 1em;
-    transform: translate(30px, 30px) scale(2);
+    transform: translate(30px, 30px) scale(1.5);
     opacity: 0;
     animation: apparition 0.5s ease-out forwards;
 
@@ -143,7 +143,7 @@
           }
 
           &:hover {
-            height: 150px;
+            height: 180px;
 
             .home--presentation--list--item--title {
               transform: translateY(-2em);

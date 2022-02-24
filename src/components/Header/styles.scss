@@ -1,7 +1,7 @@
 @use '../../styles/vars';
 
 .header {
-  transform: translateY(-100px) scale(2);
+  transform: translateY(-100px) scale(1.5);
   opacity: 0;
   animation: apparition 1s 1s ease-out forwards;
 
