@@ -1,11 +1,17 @@
 import React, { useEffect } from 'react';
 
+import Slider from '../../../components/Slider';
+
 import './styles.scss';
 
 // à modifier
 import img1 from '../../../media/dataScience/img1.jpg';
 import img2 from '../../../media/dataScience/img2.jpg';
 import img3 from '../../../media/dataScience/img3.jpg';
+import slide1 from '../../../media/dataScience/imgSlide1.jpg';
+import slide2 from '../../../media/dataScience/imgSlide2.jpg';
+import slide3 from '../../../media/dataScience/imgSlide3.jpg';
+import slide4 from '../../../media/dataScience/imgSlide4.jpg';
 import dataScience from '../../../media/dataScience/dataScience.png';
 
 const DataScience = () => {
@@ -13,6 +19,8 @@ const DataScience = () => {
   useEffect(() => {
     document.title = 'Data Science OLD - MaDaM';
   }, []);
+
+  const numberOfSlides = 4;
 
   return (
     <div className='offer'>
@@ -118,14 +126,14 @@ const DataScience = () => {
           <h4 className='offer--container--box--title'>
             Problématiques type
           </h4>
-
-
-
-
-        {/* ****************         CODER CE PUTAIN DE CAROUSEL              ************* */}
-
-
-
+          
+          <Slider
+            slide1={slide1}
+            slide2={slide2}
+            slide3={slide3}
+            slide4={slide4}
+            numberOfSlides={numberOfSlides}
+          />
 
         </div>
       </section>

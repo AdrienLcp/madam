@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 
 import './styles.scss';
@@ -7,6 +7,11 @@ import ingenierie from '../../media/home/ingenierie.png';
 import nantes from '../../media/home/nantes.png';
 
 const Home = () => {
+
+  useEffect(() => {
+    document.title = 'MaDaM – conseil en data science, lean six sigma et projets';
+  }, []);
+
   return (
     <main className='home'>
       <section className='home--presentation'>
