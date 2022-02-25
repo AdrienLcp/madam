@@ -11,10 +11,23 @@ body {
   font-family: 'Noto Serif';
   background-color: vars.$white;
   color: vars.$black;
+  line-height: 105%;
 
   ::selection {
     background-color: vars.$mainColor;
     color: vars.$white;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  body {
+    line-height: 110%;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  body {
+    line-height: 120%;
   }
 }
 

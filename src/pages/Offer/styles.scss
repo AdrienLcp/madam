@@ -1,6 +1,6 @@
 @use '../../styles/vars';
 
-.offer {
+.offers {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -35,8 +35,25 @@
   }
 }
 
+.link1 {
+  opacity: 0;
+  transform: translateX(-30px);
+  animation: apparition 1s ease-out forwards;
+}
+
+.link2 {
+  opacity: 0;
+  animation: apparition 1s ease-out forwards;
+}
+
+.link3 {
+  opacity: 0;
+  transform: translateX(30px);
+  animation: apparition 1s ease-out forwards;
+}
+
 @media screen and (min-width: 1500px) {
-  .offer {
+  .offers {
     &--container {
       margin-top: 35vh;
       margin-bottom: 25vh;
@@ -68,6 +85,7 @@
             position: absolute;
             width: 100%;
             height: 2px;
+            margin: 5px auto;
             background: vars.$white;
             transform: scale(0);
             transition: transform 0.5s ease-in-out;
@@ -87,7 +105,7 @@
         &:hover {
           height: 170px;
 
-          .offer--container--link--title {
+          .offers--container--link--title {
             transform: translateY(-2em);
 
             &::after {
@@ -95,7 +113,7 @@
             }
           }
 
-          .offer--container--link--prestations {
+          .offers--container--link--prestations {
             opacity: 1;
             transform: translateY(1em);
           }
@@ -103,22 +121,8 @@
       }
     }
   }
-}
 
-.link1 {
-  opacity: 0;
-  transform: translateX(-30px);
-  animation: apparition 1s ease-out forwards;
-}
-
-.link2 {
-  opacity: 0;
-  transform: translateY(-30px);
-  animation: apparition 1s ease-out forwards;
-}
-
-.link3 {
-  opacity: 0;
-  transform: translateX(30px);
-  animation: apparition 1s ease-out forwards;
+  .link2 {
+    transform: translateY(-30px);
+  }
 }

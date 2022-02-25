@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 import './styles.scss';
 
@@ -9,13 +10,16 @@ const Footer = () => {
   return (
     <footer className='footer'>
       <strong className='footer--title'>MaDaM</strong>
-      <div className='footer--container'>
+      <NavLink
+        className='footer--container'
+        to='/'
+      >
         <img
           src={footerImg}
           alt='MaDaM inversé'
           className='footer--container--img'
         />
-      </div>
+      </NavLink>
     </footer>
   );
 };

@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 import './styles.scss';
 
@@ -9,13 +10,16 @@ const Header = () => {
   return (
     <header className='header'>
       <h1 className='header--title'>MaDaM</h1>
-      <div className='header--container'>
+      <NavLink
+        className='header--container'
+        to='/'
+      >
         <img
           src={headerImg}
           alt='MaDaM'
           className='header--container--img'
         />
-      </div>
+      </NavLink>
     </header>
   );
 };
