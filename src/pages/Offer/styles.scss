@@ -18,6 +18,7 @@
       border-radius: 5px;
       padding: 1.5em 1em;
       color: vars.$white;
+      transition: .2s;
 
       &--title {
         text-align: center;
@@ -30,6 +31,10 @@
         &--label {
           font-size: 0.7em;
         }
+      }
+
+      &:active {
+        transform: scale(0.9);
       }
     }
   }

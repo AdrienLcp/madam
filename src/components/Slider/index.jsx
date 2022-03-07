@@ -85,22 +85,28 @@ const Slider = ({ slide1, slide2, slide3, slide4, numberOfSlides }) => {
       };
 
     } else if (activeSlide === 3) {
+      
+      if (numberOfSlides === 3) {
+        return;
+      } else {
 
-      slideRef3.current.style.transform = 'translateX(-100%)';
-      slideRef3.current.style.opacity = '0';
-      slideRef3.current.classList.remove('active_slide');
+        slideRef3.current.style.transform = 'translateX(-100%)';
+        slideRef3.current.style.opacity = '0';
+        slideRef3.current.classList.remove('active_slide');
 
-      slideRef4.current.classList.add('active_slide');
-      setActiveSlide(4);
+        slideRef4.current.classList.add('active_slide');
+        setActiveSlide(4);
 
-      rightArrowRef.current.style.visibility = 'hidden';
+        rightArrowRef.current.style.visibility = 'hidden';
+
+      }
     };
   };
 
   return (
     <section className='slider'>
 
-      <div
+      <button
         className='slider--button'
         onClick={() => {
           slideToLeft();
@@ -112,7 +118,7 @@ const Slider = ({ slide1, slide2, slide3, slide4, numberOfSlides }) => {
           alt="Voir le texte précédent"
           src={arrow}
         />
-      </div>
+      </button>
 
       <div className='slider--container'>
 
@@ -149,7 +155,7 @@ const Slider = ({ slide1, slide2, slide3, slide4, numberOfSlides }) => {
         )}
       </div>
 
-      <div
+      <button
         className='slider--button'
         onClick={() => {
           slideToRight();
@@ -161,7 +167,7 @@ const Slider = ({ slide1, slide2, slide3, slide4, numberOfSlides }) => {
           alt="Voir le texte suivant"
           src={arrow}
         />
-      </div>
+      </button>
 
     </section>
   );

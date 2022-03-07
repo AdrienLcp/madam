@@ -110,6 +110,7 @@
       &--title {
         font-size: 2em;
         margin-top: 3em;
+        margin-bottom: 3em;
       }
 
       &--text {
@@ -129,6 +130,11 @@
       &--title {
         font-size: 2em;
         text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(90deg, vars.$white, vars.$hover, vars.$white);
+        height: 2em;
       }
 
       &--box {
