@@ -100,8 +100,7 @@ const DataScience = () => {
       <div className='offer--img'>
         <img
           className='offer--img--icon'
-          // à modifier
-          alt='Graphiques compliqués'
+          alt='Data Science'
           src={img1}
         />
       </div>
@@ -129,6 +128,8 @@ const DataScience = () => {
         </p>
 
       </section>
+
+<hr className='hr'/>
       
       <section className='offer--container' id='use'>
         <h3 className='offer--container--title'>
@@ -345,6 +346,8 @@ const DataScience = () => {
           </ul>
         </div>
       </section>
+
+<hr className='hr'/>
       
       <section className='offer--container' id='methodo'>
         <h3 className='offer--container--title'>
@@ -664,11 +667,12 @@ const DataScience = () => {
       <div className='offer--img'>
         <img
           className='offer--img--icon'
-          // à modifier
-          alt='Graphiques compliqués'
+          alt='Data Science'
           src={img2}
         />
       </div>
+
+<hr className='hr'/>
 
       <section className='offer--container' id='references'>
         <h3 className='offer--container--title'>
@@ -775,11 +779,11 @@ const DataScience = () => {
       <div className='offer--img'>
         <img
           className='offer--img--icon'
-          // à modifier
-          alt='Graphiques compliqués'
+          alt='Data Science'
           src={img3}
         />
       </div>
+
       <div className='offer--link'>
         <p className='offer--link--text'>
           Besoin d'informations ? Contactez nous

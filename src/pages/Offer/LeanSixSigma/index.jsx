@@ -29,6 +29,11 @@ import step2_3 from '../../../media/leanSixSigma/steps/step2_3.png';
 import step3_1 from '../../../media/leanSixSigma/steps/step3_1.png';
 import step3_2 from '../../../media/leanSixSigma/steps/step3_2.png';
 import step3_3 from '../../../media/leanSixSigma/steps/step3_3.png';
+import step4_1 from '../../../media/leanSixSigma/steps/step4_1.png';
+import step4_2 from '../../../media/leanSixSigma/steps/step4_2.png';
+import step4_3 from '../../../media/leanSixSigma/steps/step4_3.png';
+import step5_1 from '../../../media/leanSixSigma/steps/step5_1.png';
+import step5_2 from '../../../media/leanSixSigma/steps/step5_2.png';
 
 const LeanSixSigma = () => {
 
@@ -74,21 +79,18 @@ const LeanSixSigma = () => {
 
       <section className='offer--quote'>
         <q className='offer--quote--content'>
-          {/* à modifier */}
-          "Vous obtiendrez, avec une simple souris, tout ce que vous voudrez"
+          "Parfois on se trompe dans l’analyse d’un événement parce qu’on reste figé dans le seul point de vue qui nous semble évident"
         </q>
 
         <span className='offer--quote--author'>
-          {/* à modifier */}
-          Les Deschiens
+          Bernard Werber
         </span>
       </section>
 
       <div className='offer--img'>
         <img
           className='offer--img--icon'
-          // à modifier
-          alt='Graphiques compliqués'
+          alt='Lean Six Sigma'
           src={img1}
         />
       </div>
@@ -99,24 +101,16 @@ const LeanSixSigma = () => {
         </h3>
 
         <p className='offer--container--text'>
-          {/* à modifier ? */}
-          Big Data, Data Science, Data Analyse… Vous en entendez parler tous les jours ou presque, vous êtes convaincus que c’est une révolution, un simple effet de mode, ou une porte ouverte à de dangereuses dérives dans plusieurs domaines. C’est avant tout le chapitre “données” qui déchaîne, à juste titre, les passions.
+          Engager un projet Lean 6 Sigma, c’est prendre le taureau par les cornes. Le séquençage en DMAIC, colonne vertébrale du projet, tient du bon sens absolu mais engage toute l’équipe dans la rigueur et le pragmatisme nécessaires à la résolution de problèmes complexes. 
         </p>
 
         <p className='offer--container--text'>
-          {/* à modifier ? */}
-          Mais si les données exploitées respectent les droits fondamentaux et la vie privée, l’analyse de données massives n’est plus qu’une formidable opportunité pour <strong>TOUTES</strong> les entreprises.
-          <br />
-          Point de convergence entre les <strong>statistiques</strong>, la <strong>programmation informatique</strong> et <strong>l’intelligence artificielle</strong>, la Data Science offre des possibilités infinies, que ce soit pour automatiser des tâches informatiques dans une PME comme pour construire des modèles prédictifs dans une grande entreprise.
+          Les mesures amènent la crédibilité, les statistiques la justesse, il ne nous reste ensuite qu’à innover ensemble.
         </p>
-
-        <p className='offer--container--text'>
-          {/* à modifier ? */}
-          Big Data, Data Science, Data Analyse… Vous en entendez parler tous les jours ou presque, vous êtes convaincus que c’est une révolution, un simple effet de mode, ou une porte ouverte à de dangereuses dérives dans plusieurs domaines. C’est avant tout le chapitre “données” qui déchaîne, à juste titre, les passions.
-        </p>
-
       </section>
-      
+
+<hr className='hr'/>
+
       <section className='offer--container' id='use'>
         <h3 className='offer--container--title'>
           A quoi ça sert ?
@@ -132,36 +126,36 @@ const LeanSixSigma = () => {
           </div>
 
           <p className='offer--container--description--label'>
-            La Data Science vous permet d’utiliser vos données brutes afin d’en extraire les informations ayant une forte <strong>valeur ajoutée</strong> pour votre organisation. Nos compétences en langage Python, Statistiques et Machine Learning couvrent l’ensemble des étapes d’analyse de données massives, du nettoyage de la base jusqu’à la création de modèles prédictifs.
+            Le Lean Six Sigma combine le Lean, qui a pour objectif l’élimination des gaspillages, et… le Six Sigma, qui vise la réduction de la variabilité des processus, donc des défauts. Cette méthode permet de résoudre des problèmes complexes de performance et/ou de qualité, et peut être employée dans l’industrie, les services ou même le commerce
           </p>
         </div>
 
         <div className='offer--container--box'>
           <h4 className='offer--container--box--title'>
-            Avec cette démarche, vous obtiendrez :
+            Les 5 étapes DMAIC de la méthode Lean Six Sigma
           </h4>
 
           <ul className='offer--container--box--list'>
             <li className='offer--container--box--list--item'>
-              • <strong>Une base de données exhaustive et exploitable</strong>, contenant l’ensemble des variables nécessaires au pilotage de votre activité.
+              ❓ Définir
             </li>
 
             <li className='offer--container--box--list--item'>
-              • <strong>Des relations statistiques entre ces variables :</strong> corrélations, différences moyenne/médiane entre groupes, dépendances de variables qualitatives. Ces résultats peuvent être interprétés comme des relations de cause à effet, conduisant à prendre des décisions sur les causes afin d’obtenir les effets souhaités.
+              🧾 Mesurer
             </li>
 
             <li className='offer--container--box--list--item'>
-              • <strong>Des modèles prédictifs</strong>, permettant d’anticiper la valeur de vos indicateurs critiques, et d’agir en conséquence.
+              📊 Analyser
             </li>
 
             <li className='offer--container--box--list--item'>
-              • La visualisation de ces données et de vos indicateurs, via des librairies dédiées aux tableaux de bord interactifs.
+              💡 Innover
+            </li>
+
+            <li className='offer--container--box--list--item'>
+              📈 Contrôler
             </li>
           </ul>
-
-          <span className='offer--container--box--span'>
-            En écrivant les scripts appropriés, il sera possible de fournir des analyses régulières avec de nouvelles données, sans modifier la structure du programme.
-          </span>
         </div>
 
         <div className='offer--container--box'>
@@ -178,8 +172,62 @@ const LeanSixSigma = () => {
           />
 
         </div>
+        
+        <div className='offer--container--box'>
+          <h4 className='offer--container--box--title'>
+            Il existe plusieurs niveaux de compétences en Lean Six Sigma
+          </h4>
+
+          <table className='offer--container--box--table'>
+            <tbody className='offer--container--box--table--body'>
+              <tr className='offer--container--box--table--body--row'>
+                <td className='offer--container--box--table--body--row--content'>
+                  ⚪ White Belt
+                </td>
+                <td className='offer--container--box--table--body--row--content'>
+                  Formation aux enjeux du Lean Six Sigma (~1 jour)
+                </td>
+              </tr>
+              <tr className='offer--container--box--table--body--row'>
+                <td className='offer--container--box--table--body--row--content'>
+                  🟡 Yellow Belt
+                </td>
+                <td className='offer--container--box--table--body--row--content'>
+                  Formation aux enjeux du Lean Six Sigma (~3 jours)
+                </td>
+              </tr>
+              <tr className='offer--container--box--table--body--row'>
+                <td className='offer--container--box--table--body--row--content'>
+                  🟢 Green Belt
+                </td>
+                <td className='offer--container--box--table--body--row--content'>
+                  Animation de petits projets (entre 25 k€ et 100 k€)
+                </td>
+              </tr>
+              <tr className='offer--container--box--table--body--row'>
+                <td className='offer--container--box--table--body--row--content'>
+                  <strong>⚫ Black Belt ✅</strong>
+                </td>
+                <td className='offer--container--box--table--body--row--content'>
+                  <strong>Animation de projets importants (gains projet supérieurs à 100k€) <br />→ Notre niveau de compétence certifié</strong>
+                </td>
+              </tr>
+              <tr className='offer--container--box--table--body--row'>
+                <td className='offer--container--box--table--body--row--content'>
+                  ⚫⚫ Master Black Belt
+                </td>
+                <td className='offer--container--box--table--body--row--content'>
+                  Formation des équipes et veille technique
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
       </section>
-      
+
+<hr className='hr'/>
+
       <section className='offer--container' id='methodo'>
         <h3 className='offer--container--title'>
           Notre méthodologie
@@ -188,11 +236,11 @@ const LeanSixSigma = () => {
         <ul className='offer--container--steps'>
           <li className='offer--container--steps--step'>
             <h4 className='offer--container--steps--step--title'>
-              Étape 1 : Nettoyage des données
+              D - Définir
             </h4>
 
             <span className='offer--container--steps--step--span'>
-              Cette première étape indispensable consiste à créer une base de données “propre” pérenne
+              C’est l’étape clef de démarrage du projet !
             </span>
 
             <div className='offer--container--steps--step--box'>
@@ -204,11 +252,13 @@ const LeanSixSigma = () => {
                 />
               </div>
               <p className='offer--container--steps--step--box--text'>
-                Concaténation de bases de données séparées
+                (1) Formalisation et quantification du problème
               </p>
             </div>
             <em className='offer--container--steps--step--example'>
-              Ex : concaténation d’une base de données « clients » avec une base de données « commandes »
+              Dans l’idéal avec le client du processus
+              <br />
+              Outils : VoC – CTQ – diagramme de Kano – questionnaire – analyse statistique des données du passé
             </em>
 
             <div className='offer--container--steps--step--box'>
@@ -220,11 +270,11 @@ const LeanSixSigma = () => {
                 />
               </div>
               <p className='offer--container--steps--step--box--text'>
-                Suppression des valeurs aberrantes
+                (2) Description du processus
               </p>
             </div>
             <em className='offer--container--steps--step--example'>
-              Ex : retrait de valeurs « texte » dans une colonne numérique
+              Outils : VSM – logigramme de processus – analyse de déroulement – SIPOC
             </em>
 
             <div className='offer--container--steps--step--box'>
@@ -236,11 +286,13 @@ const LeanSixSigma = () => {
                 />
               </div>
               <p className='offer--container--steps--step--box--text'>
-                Remplissage des données manquantes par algorithmes
+                (3) Choix de l’indicateur du projet
               </p>
             </div>
             <em className='offer--container--steps--step--example'>
-              Ex : kNN
+              Quelle donnée mesurable décrit le problème à résoudre ? Quel est l’état initial (avant projet) de cet indicateur ?
+              <br />
+              Outils : densité de probabilité, statistiques descriptives, indice de capabilité, carte de contrôle
             </em>
 
             <div className='offer--container--steps--step--box'>
@@ -252,21 +304,27 @@ const LeanSixSigma = () => {
                 />
               </div>
               <p className='offer--container--steps--step--box--text'>
-                Formatage des données
+                (4) Rédaction de la charte projet
               </p>
             </div>
             <em className='offer--container--steps--step--example'>
-              Ex : suppression de caractères inutiles, nombre de décimales
+              Description quantitative du problème à résoudre, objectif, périmètre, acteurs et implication, planning.
+              <br />
+              Outils : charte projet, RACI, planning projet
             </em>
+
+            <span className='offer--container--steps--step--span'>
+              La charte projet est le livrable majeur de cette étape. Elle donne le cadre, et évite les dérives éventuelles en cours de projet.
+            </span>
           </li>
 
           <li className='offer--container--steps--step'>
             <h4 className='offer--container--steps--step--title'>
-              Étape 2 : Analyse exploratoire
+              M – Mesurer
             </h4>
 
             <span className='offer--container--steps--step--span'>
-              Nous allons maintenant pouvoir comprendre le contenu de notre base de données “nettoyée” avec des outils statistiques.
+              On va effectuer une série de mesures sur l’indicateur principal du projet (que l’on appelle « y »), tout en faisant varier les paramètres choisis pour leur potentielle influence sur cet indicateur (que l’on appelle « x1, x2, x3, … »)
             </span>
 
             <div className='offer--container--steps--step--box'>
@@ -278,11 +336,13 @@ const LeanSixSigma = () => {
                 />
               </div>
               <p className='offer--container--steps--step--box--text'>
-                Observation de la distribution des variables quantitatives, mise en évidence d’outliers
+                (1) Sélection des paramètres « x1, x2, x3, … » qui ont de l’influence sur notre « y ».
               </p>
             </div>
             <em className='offer--container--steps--step--example'>
-              Ex : histogramme, boîte à moustache
+              Outils : QQOQCCP, Ishikawa, matrice de décision
+              <br />
+              NB : cette étape permet aussi d’identifier les “Quick Wins”, actions simples permettant un gain immédiat
             </em>
 
             <div className='offer--container--steps--step--box'>
@@ -294,11 +354,11 @@ const LeanSixSigma = () => {
                 />
               </div>
               <p className='offer--container--steps--step--box--text'>
-                Observation de la distribution des variables qualitatives
+                (2) Validation du processus de mesure
               </p>
             </div>
             <em className='offer--container--steps--step--example'>
-              Ex : diagramme des effectifs
+              Outils : MSA, étalonnage
             </em>
 
             <div className='offer--container--steps--step--box'>
@@ -310,25 +370,21 @@ const LeanSixSigma = () => {
                 />
               </div>
               <p className='offer--container--steps--step--box--text'>
-                Analyses bivariées : existe-t-il des relations entre les paramètres ?
+                (3) Réalisation des mesures
               </p>
             </div>
             <em className='offer--container--steps--step--example'>
-              Ex : carte des corrélations, Test du CHi², t-test de student, ANOVA
+              Outils : plan de collecte des données, plan d’expérience
             </em>
-
-            <span className='offer--container--steps--step--span'>
-              → Au terme de cette étape, nous avons déjà extrait une partie de la valeur de vos données : ces constats statistiques conduisent souvent à des liens de causes à effet permettant d’agir ! De plus, la qualité des données permet alors de générer la visualisation interactive des indicateurs désirés (via des librairies comme Dash ou Streamlit).
-            </span>
           </li>
 
           <li className='offer--container--steps--step'>
             <h4 className='offer--container--steps--step--title'>
-              Étape 3 : Feature engineering
+              A – Analyser
             </h4>
 
             <span className='offer--container--steps--step--span'>
-              En vue de créer une modélisation des données par Machine Learning, nous devons maintenant manipuler les données pour qu’elles conviennent aux différents algorithmes exploitables. On peut considérer qu’il s’agit d’une nouvelle étape de nettoyage des données, mais qui nécessite une bonne connaissance des algorithmes de Machine Learning.
+              Il s’agit de l’analyse statistique des mesures collectées. On cherche alors des relations entre les données d’entrées (« x1, x2, x3… »), qu’on a volontairement fait varier pour les mesures, et la donnée de sortie qui est l’objet du projet (« y »). Cette étape requiert des compétences en statistiques pour ne pas faire de conclusions erronées (par exemple : non prise en compte des interactions entre paramètres, comparaisons de moyennes sans tests statistiques…).
             </span>
 
             <div className='offer--container--steps--step--box'>
@@ -340,11 +396,11 @@ const LeanSixSigma = () => {
                 />
               </div>
               <p className='offer--container--steps--step--box--text'>
-                Encodage des variables qualitatives
+                (1) Statistiques descriptives sur le « y » et les « x1, x2, x3, … »
               </p>
             </div>
             <em className='offer--container--steps--step--example'>
-              Ex : Label Encoder, One-hot
+              Outils : histogramme, boîte à moustache, diagramme des fréquences, test de normalité
             </em>
 
             <div className='offer--container--steps--step--box'>
@@ -356,11 +412,11 @@ const LeanSixSigma = () => {
                 />
               </div>
               <p className='offer--container--steps--step--box--text'>
-                Transformation des variables quantitatives pour obtenir un distribution normale
+                (2) Tests statistiques : recherche de liens de cause à effet
               </p>
             </div>
             <em className='offer--container--steps--step--example'>
-              Ex : transformation logarithmique
+              Outils : corrélations, t-test, ANOVA, Chi², carte multivariée, diagramme des interactions
             </em>
 
             <div className='offer--container--steps--step--box'>
@@ -372,105 +428,134 @@ const LeanSixSigma = () => {
                 />
               </div>
               <p className='offer--container--steps--step--box--text'>
-                Ajout de colonnes d’interactions entre les variables
+                (3) Recherche de causes racines
               </p>
             </div>
             <em className='offer--container--steps--step--example'>
-              Ex : variables polynomiales
+              Outils : Ishikawa, 5 pourquoi
             </em>
+
+            <span className='offer--container--steps--step--span'>
+              D’un point de vue technique, il est possible d’utiliser des logiciels dédiés comme Minitab, mais aussi les outils de la Data Science : Python, librairies Pandas, Numpy, Matplotlib/Seaborn, Scikit Learn.
+            </span>
           </li>
 
           <li className='offer--container--steps--step'>
             <h4 className='offer--container--steps--step--title'>
-              Étape 4 : Machine Learning
+              I – Innover
             </h4>
 
             <span className='offer--container--steps--step--span'>
-              Vos données sont maintenant prêtes pour des algorithmes de Machine Learning. Il en existe 2 types :
+              Après avoir identifié quels « x » influencent notre « y » (et quels « x » interagissent entre eux), nous pouvons définir les actions à mener pour atteindre l’objectif.
             </span>
 
-            <p className='offer--container--steps--step--text'>
-              • <strong>Supervisé</strong> : on cherche à prédire une variable de sortie à partir des données du passé. Cela nécessite de faire une séparation “entraînement” et “test” de nos données. L’évaluation de la robustesse du modèle se fait avec des grandeurs comme l’<strong>Accuracy</strong> ou la <strong>RMSE</strong>.
-            </p>
-
+            <div className='offer--container--steps--step--box'>
+              <div className='offer--container--steps--step--box--img'>
+                <img
+                  className='offer--container--steps--step--box--img--icon'
+                  alt='Graphique'
+                  src={step4_1}
+                />
+              </div>
+              <p className='offer--container--steps--step--box--text'>
+                (1) Priorisation des causes
+              </p>
+            </div>
             <em className='offer--container--steps--step--example'>
-              Exemples d’applications : nombre de produits vendus dans les 6 prochains mois, l’image est un chat / n’est pas un chat.
+              Outils : pareto, AMDEC
             </em>
 
-            <div className='offer--container--steps--step--algo'>
-              <span className='offer--container--steps--step--algo--span'>
-                Exemples d'algorithmes :
-              </span>
-
-              <ul className='offer--container--steps--step--algo--list'>
-                <li className='offer--container--steps--step--algo--list--item'>
-                  - Régression linéaire
-                </li>
-                <li className='offer--container--steps--step--algo--list--item'>
-                  - kNN
-                </li>
-                <li className='offer--container--steps--step--algo--list--item'>
-                  - Réseau de neurones
-                </li>
-                <li className='offer--container--steps--step--algo--list--item'>
-                  - Forêt aléatoire
-                </li>
-                <li className='offer--container--steps--step--algo--list--item'>
-                  - Gradient Boosting
-                </li>
-              </ul>
+            <div className='offer--container--steps--step--box'>
+              <div className='offer--container--steps--step--box--img'>
+                <img
+                  className='offer--container--steps--step--box--img--icon'
+                  alt='Graphique'
+                  src={step4_2}
+                />
+              </div>
+              <p className='offer--container--steps--step--box--text'>
+                (2) Création de groupes de travail par sujet et par compétences
+              </p>
             </div>
-
-            <p className='offer--container--steps--step--text'>
-              • <strong>Non supervisé</strong> : l’algorithme va créer des groupes les plus distincts possibles entre eux en fonction des paramètres de chaque individu. On appelle cela le “clustering”. L’évaluation de la robustesse du modèle se fait avec des grandeurs comme le <strong>coefficient de silhouette</strong> ou l'<strong>ARI</strong>.
-            </p>
-
             <em className='offer--container--steps--step--example'>
-              Exemple d’application : segmentation de clients pour la recommandation de produits.
+              Outils : brainstorming, management visuel, ateliers participatifs
             </em>
 
-            <div className='offer--container--steps--step--algo'>
-              <span className='offer--container--steps--step--algo--span'>
-                Exemples d'algorithmes :
-              </span>
-
-              <ul className='offer--container--steps--step--algo--list'>
-                <li className='offer--container--steps--step--algo--list--item'>
-                  - K-MEANS
-                </li>
-                <li className='offer--container--steps--step--algo--list--item'>
-                  - Clustering agglomératif
-                </li>
-                <li className='offer--container--steps--step--algo--list--item'>
-                  - DBSCAN
-                </li>
-              </ul>
+            <div className='offer--container--steps--step--box'>
+              <div className='offer--container--steps--step--box--img'>
+                <img
+                  className='offer--container--steps--step--box--img--icon'
+                  alt='Graphique'
+                  src={step4_3}
+                />
+              </div>
+              <p className='offer--container--steps--step--box--text'>
+                (3) Détermination des actions, responsables et planification
+              </p>
             </div>
+            <em className='offer--container--steps--step--example'>
+              Outils : plan d’actions, projets A3, MS Project
+            </em>
           </li>
 
           <li className='offer--container--steps--step'>
             <h4 className='offer--container--steps--step--title'>
-              Et les statistiques ?
+              C – Contrôler
             </h4>
 
-            <p className='offer--container--steps--step--text'>
-              Notre valeur ajoutée ? Nous utilisons les statistiques. Nous maîtrisons les conditions nécessaires à une étude statistique solide. Nous avons les compétences pour vous indiquer si oui ou non une différence de moyenne entre 2 groupes de mesures est statistiquement significative ou non.
-            </p>
-            <p className='offer--container--steps--step--text'>
-              Outils types : t-test, test de mann-Whitney, ANOVA, test de Kruskal Wallis, test du Chi²
-            </p>
+            <span className='offer--container--steps--step--span'>
+              Cette dernière étape permet d’une part de vérifier l’impact des actions réalisées sur l’atteinte de l’objectif, d’autre part de mettre sous surveillance notre y ainsi que les paramètres « x » qui influent sur « y ». Ceci vous permettra de repérer et corriger les éventuelles dérives de votre processus.
+            </span>
+
+            <div className='offer--container--steps--step--box'>
+              <div className='offer--container--steps--step--box--img'>
+                <img
+                  className='offer--container--steps--step--box--img--icon'
+                  alt='Graphique'
+                  src={step5_1}
+                />
+              </div>
+              <p className='offer--container--steps--step--box--text'>
+                (1) Mise sous contrôle statistique du « y » et des « x » retenus
+              </p>
+            </div>
+            <em className='offer--container--steps--step--example'>
+              Outils : carte de contrôle, tableau de bord, calcul de capabilité
+            </em>
+
+            <div className='offer--container--steps--step--box'>
+              <div className='offer--container--steps--step--box--img'>
+                <img
+                  className='offer--container--steps--step--box--img--icon'
+                  alt='Graphique'
+                  src={step5_2}
+                />
+              </div>
+              <p className='offer--container--steps--step--box--text'>
+                (2) Création de rituels de suivi
+              </p>
+            </div>
+            <em className='offer--container--steps--step--example'>
+              Outils : réunions opérationnelles (quotidiennes ou hebdomadaires)
+            </em>
           </li>
+
+          <span className='offer--container--steps--step--span'>
+            Au terme de cette étape, le projet est t’il terminé ? Pas vraiment ! Il faudra impérativement féliciter l’équipe, et communiquer sur le succès pour valoriser l’implication des parties prenantes.
+          </span>
+
         </ul>
       </section>
 
       <div className='offer--img'>
         <img
           className='offer--img--icon'
-          // à modifier
-          alt='Graphiques compliqués'
+          alt='Lean Six Sigma'
           src={img2}
         />
       </div>
+
+<hr className='hr'/>
 
       <section className='offer--container' id='references'>
         <h3 className='offer--container--title'>
@@ -495,10 +580,21 @@ const LeanSixSigma = () => {
           <tbody className='offer--container--table--body'>
             <tr className='offer--container--table--body--row'>
               <td className='offer--container--table--body--row--content'>
-                Anticipation de la consommation énergétique d’une ville à l’aide de relevés antérieurs
+                Réduction du temps de traitement des non-conformités
               </td>
               <td className='offer--container--table--body--row--content'>
-                Énergie
+                Aéronautique
+              </td>
+              <td className='offer--container--table--body--row--content'>
+                🟢🟢🟢🟢⚫
+              </td>
+            </tr>
+            <tr className='offer--container--table--body--row'>
+              <td className='offer--container--table--body--row--content'>
+                Réduction du temps d’analyse de la facturation des dommages générés en production
+              </td>
+              <td className='offer--container--table--body--row--content'>
+                Aéronautique
               </td>
               <td className='offer--container--table--body--row--content'>
                 Interne
@@ -506,10 +602,21 @@ const LeanSixSigma = () => {
             </tr>
             <tr className='offer--container--table--body--row'>
               <td className='offer--container--table--body--row--content'>
-                POC d’une idée d’application sur une base de données alimentaire
+                Étude statistique du chiffre d’affaire annuel d’un café concert pour la mise en évidence des paramètres influents
               </td>
               <td className='offer--container--table--body--row--content'>
-                Santé
+                Hôtellerie / Restauration
+              </td>
+              <td className='offer--container--table--body--row--content'>
+                🟢🟢🟢🟢🟢
+              </td>
+            </tr>
+            <tr className='offer--container--table--body--row'>
+              <td className='offer--container--table--body--row--content'>
+                5S salle conditionnement surgelés
+              </td>
+              <td className='offer--container--table--body--row--content'>
+                Agroalimentaire
               </td>
               <td className='offer--container--table--body--row--content'>
                 Interne
@@ -517,54 +624,10 @@ const LeanSixSigma = () => {
             </tr>
             <tr className='offer--container--table--body--row'>
               <td className='offer--container--table--body--row--content'>
-                Classification automatique des produits par analyse d’image
+                Mise en place Kanban
               </td>
               <td className='offer--container--table--body--row--content'>
-                Commerce
-              </td>
-              <td className='offer--container--table--body--row--content'>
-                Interne
-              </td>
-            </tr>
-            <tr className='offer--container--table--body--row'>
-              <td className='offer--container--table--body--row--content'>
-                Création d’un tableau de bord interactif sur navigateur
-              </td>
-              <td className='offer--container--table--body--row--content'>
-                Commerce
-              </td>
-              <td className='offer--container--table--body--row--content'>
-                Interne
-              </td>
-            </tr>
-            <tr className='offer--container--table--body--row'>
-              <td className='offer--container--table--body--row--content'>
-                Clustering des clients
-              </td>
-              <td className='offer--container--table--body--row--content'>
-                Commerce
-              </td>
-              <td className='offer--container--table--body--row--content'>
-                Interne
-              </td>
-            </tr>
-            <tr className='offer--container--table--body--row'>
-              <td className='offer--container--table--body--row--content'>
-                Création d’un environnement Big Data dans le cloud
-              </td>
-              <td className='offer--container--table--body--row--content'>
-                Commerce
-              </td>
-              <td className='offer--container--table--body--row--content'>
-                Interne
-              </td>
-            </tr>
-            <tr className='offer--container--table--body--row'>
-              <td className='offer--container--table--body--row--content'>
-                Détermination des pays à plus fort potentiel pour des solutions d’e-learning
-              </td>
-              <td className='offer--container--table--body--row--content'>
-                Éducation & formation
+                Aéronautique
               </td>
               <td className='offer--container--table--body--row--content'>
                 Interne
@@ -577,11 +640,11 @@ const LeanSixSigma = () => {
       <div className='offer--img'>
         <img
           className='offer--img--icon'
-          // à modifier
-          alt='Graphiques compliqués'
+          alt='Lean Six Sigma'
           src={img3}
         />
       </div>
+
       <div className='offer--link'>
         <p className='offer--link--text'>
           Besoin d'informations ? Contactez nous

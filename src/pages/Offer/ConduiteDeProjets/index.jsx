@@ -114,7 +114,9 @@ const ConduiteDeProjets = () => {
         </p>
 
       </section>
-      
+
+<hr className='hr'/>
+
       <section className='offer--container' id='use'>
         <h3 className='offer--container--title'>
           A quoi ça sert ?
@@ -209,6 +211,8 @@ const ConduiteDeProjets = () => {
           </ul>
         </div>
       </section>
+
+<hr className='hr'/>
       
       <section className='offer--container' id='methodo'>
         <h3 className='offer--container--title'>
@@ -216,7 +220,7 @@ const ConduiteDeProjets = () => {
         </h3>
 
         <span className='offer--container--span'>
-          Suivant le besoin en accompagnement exprimé, 2 types de parcours sont possibles !
+          Suivant le besoin en accompagnement exprimé, <strong>2 types de parcours</strong> sont possibles !
         </span>
 
         <ul className='offer--container--methodo'>
@@ -274,7 +278,7 @@ const ConduiteDeProjets = () => {
 
             <img
               className='offer--container--methodo--step--img'
-              alt='Tableau conduite de projets'
+              alt='Conduite de projets'
               src={step1_2}
             />
 
@@ -285,7 +289,7 @@ const ConduiteDeProjets = () => {
             <h5 className='offer--container--methodo--step--subtitle'>
               Étape 1 : Diagnostic
             </h5>
-            
+
             <p className='offer--container--methodo--step--text'>
               Lors de cette étape, il est question de comprendre l’environnement dans lequel l’entreprise évolue (<strong>analyse externe</strong>) et les éléments qui constituent sa colonne vertébrale (<strong>analyse interne</strong>).
             </p>
@@ -293,6 +297,128 @@ const ConduiteDeProjets = () => {
             <p className='offer--container--methodo--step--text'>
               <strong>🔎 Analyse externe → identifier les grandes tendances qui structurent l’environnement et les relations avec les parties prenantes</strong>
             </p>
+
+            <img
+              className='offer--container--methodo--step--img'
+              alt='Conduite de projets'
+              src={step2_1}
+            />
+
+            <p className='offer--container--methodo--step--text'>
+              Bien qu’à priori simple, c’est une étape majeure qui permet de comprendre les enjeux actuels (environnementaux, sociétaux, …) et les conséquences organisationnelles et managériales qui en découlent.
+            </p>
+
+            <p className='offer--container--methodo--step--text'>
+              <strong>🔎 Analyse interne → état des lieux des fondements de l’entreprise</strong> 
+            </p>
+
+            <p className='offer--container--methodo--step--text'>
+              On s’intéresse ici à l’identité et à l’histoire de l’entreprise, qui conduisent à sa stratégie.
+            </p>
+
+            <img
+              className='offer--container--methodo--step--img'
+              alt='Conduite de projets'
+              src={step2_2}
+            />
+
+            <p className='offer--container--methodo--step--text'>
+              Comment la stratégie est-elle déclinée (business → fonction → opérations → objectifs) ? Quelles sont les tâches critiques ? Bref, ce que doit faire l’organisation.
+            </p>
+
+            <p className='offer--container--methodo--step--text'>
+              Puis on décrit :
+            </p>
+            
+            <p className='offer--container--methodo--step--text'>
+              • La culture de l’entreprise : normes, valeurs, modèles
+              <br />
+              • L’organisation formelle : design organisationnel, management, SI
+              <br />
+              • Les caractéristiques, compétences et connaissances des femmes et hommes qui constituent l’entreprise
+            </p>
+
+            <img
+              className='offer--container--methodo--step--img'
+              alt='Conduite de projets'
+              src={step2_3}
+            />
+
+            <p className='offer--container--methodo--step--text'>
+              Une fois cette étape terminée, nous pouvons alors poursuivre avec l’analyse, permettant de faire état de la maturité de l’organisation face au changement souhaité.
+            </p>
+
+            <h5 className='offer--container--methodo--step--subtitle'>
+              Étape 2 : Analyse
+            </h5>
+
+            <p className='offer--container--methodo--step--text'>
+              L’analyse se conduit sur <strong>deux niveaux</strong>.
+            </p>
+            
+            <p className='offer--container--methodo--step--text'>
+              • <strong>Premier niveau :</strong> ma stratégie est-elle clairement définie ? A tous les niveaux (business → fonction → opérations → objectifs) ? Est-elle en accord avec notre environnement ? Notre histoire ? Notre identité ? 
+            </p>
+
+            <img
+              className='offer--container--methodo--step--img'
+              alt='Conduite de projets'
+              src={step2_4}
+            />
+
+            <p className='offer--container--methodo--step--text'>
+              C’est répondre à la question : <strong>sommes-nous alignés avec notre raison d’être ? </strong>
+            </p>
+            
+            <p className='offer--container--methodo--step--text'>
+              • <strong>Second niveau :</strong> quels sont les risques de désalignement entre ma stratégie et les différentes composantes de mon entreprise (culture, organisation, ressources et compétences) ? Les risques de désalignement entre les différentes composantes elles-mêmes ? 
+            </p>
+
+            <img
+              className='offer--container--methodo--step--img'
+              alt='Conduite de projets'
+              src={step2_5}
+            />
+            
+            <p className='offer--container--methodo--step--text'>
+              Avons-nous toutes les clefs en main pour mettre en place notre stratégie dans les meilleures conditions ?
+            </p>
+
+            <p className='offer--container--methodo--step--text'>
+              A l’issue de cette étape, nous pourrons définir un <strong>plan d’actions</strong>.
+            </p>
+
+            <h5 className='offer--container--methodo--step--subtitle'>
+              Étape 3 : Recommandations
+            </h5>
+            
+            <p className='offer--container--methodo--step--text'>
+              Quelles sont les opportunités d’amélioration immédiate ? A court terme ? Les changements à moyen-long terme ? C’est l’équation entre l’importance du risque (liée à l’organisation) et l’urgence de la transformation (liée à l’environnement) qui va définir les priorités et permettre de tendre vers un réalignement de manière sereine.
+            </p>
+
+            <img
+              className='offer--container--methodo--step--img'
+              alt='Conduite de projets'
+              src={step2_6}
+            />
+            
+            <p className='offer--container--methodo--step--text'>
+              Et après ?
+            </p>
+
+            <h5 className='offer--container--methodo--step--subtitle'>
+              Étape 4 : Retour d’expérience
+            </h5>
+            
+            <p className='offer--container--methodo--step--text'>
+              Après, on s’assure que l’on a bien capitalisé (et si c’était à refaire ?), que nos processus sont robustes, on célèbre avec les parties prenantes et on n’oublie pas que c’est une démarche itérative en constante évolution.
+            </p>
+
+            <img
+              className='offer--container--methodo--step--img'
+              alt='Conduite de projets'
+              src={step2_7}
+            />
 
           </li>
         </ul>
@@ -306,6 +432,8 @@ const ConduiteDeProjets = () => {
           src={img2}
         />
       </div>
+
+<hr className='hr'/>
 
       <section className='offer--container' id='references'>
         <h3 className='offer--container--title'>
@@ -330,10 +458,65 @@ const ConduiteDeProjets = () => {
           <tbody className='offer--container--table--body'>
             <tr className='offer--container--table--body--row'>
               <td className='offer--container--table--body--row--content'>
-                Anticipation de la consommation énergétique d’une ville à l’aide de relevés antérieurs
+                Coordination équipe bureau d’étude
               </td>
               <td className='offer--container--table--body--row--content'>
-                Énergie
+                Aéronautique
+              </td>
+              <td className='offer--container--table--body--row--content'>
+                🟢🟢🟢🟢🟢
+              </td>
+            </tr>
+            <tr className='offer--container--table--body--row'>
+              <td className='offer--container--table--body--row--content'>
+                Management de la Supply Chain (environnement multiculturel)
+              </td>
+              <td className='offer--container--table--body--row--content'>
+                Aéronautique
+              </td>
+              <td className='offer--container--table--body--row--content'>
+                🟢🟢🟢🟢⚫
+              </td>
+            </tr>
+            <tr className='offer--container--table--body--row'>
+              <td className='offer--container--table--body--row--content'>
+                Restructuration d’un service (international)
+              </td>
+              <td className='offer--container--table--body--row--content'>
+                Aéronautique
+              </td>
+              <td className='offer--container--table--body--row--content'>
+                🟢🟢🟢🟢⚫
+              </td>
+            </tr>
+            <tr className='offer--container--table--body--row'>
+              <td className='offer--container--table--body--row--content'>
+                Coordination intervention fournisseurs sur site
+              </td>
+              <td className='offer--container--table--body--row--content'>
+                Aéronautique
+              </td>
+              <td className='offer--container--table--body--row--content'>
+                🟢🟢🟢🟢⚫
+              </td>
+            </tr>
+            <tr className='offer--container--table--body--row'>
+              <td className='offer--container--table--body--row--content'>
+                Analyse et recommandations sur la performance financière d’un café-concert.
+              </td>
+              <td className='offer--container--table--body--row--content'>
+                Hôtellerie / Restauration
+              </td>
+              <td className='offer--container--table--body--row--content'>
+                🟢🟢🟢🟢🟢
+              </td>
+            </tr>
+            <tr className='offer--container--table--body--row'>
+              <td className='offer--container--table--body--row--content'>
+                Mise en place rayonnage
+              </td>
+              <td className='offer--container--table--body--row--content'>
+                Agroalimentaire
               </td>
               <td className='offer--container--table--body--row--content'>
                 Interne
@@ -341,68 +524,24 @@ const ConduiteDeProjets = () => {
             </tr>
             <tr className='offer--container--table--body--row'>
               <td className='offer--container--table--body--row--content'>
-                POC d’une idée d’application sur une base de données alimentaire
+                Analyse de récurrences sur les dommages générés en production, déduction de projets opérationnels
               </td>
               <td className='offer--container--table--body--row--content'>
-                Santé
+                Aéronautique
               </td>
               <td className='offer--container--table--body--row--content'>
-                Interne
-              </td>
-            </tr>
-            <tr className='offer--container--table--body--row'>
-              <td className='offer--container--table--body--row--content'>
-                Classification automatique des produits par analyse d’image
-              </td>
-              <td className='offer--container--table--body--row--content'>
-                Commerce
-              </td>
-              <td className='offer--container--table--body--row--content'>
-                Interne
+                NA
               </td>
             </tr>
             <tr className='offer--container--table--body--row'>
               <td className='offer--container--table--body--row--content'>
-                Création d’un tableau de bord interactif sur navigateur
+                Analyse technico-financière des interventions fournisseurs, négociation et mise en place de standards
               </td>
               <td className='offer--container--table--body--row--content'>
-                Commerce
+                Aéronautique
               </td>
               <td className='offer--container--table--body--row--content'>
-                Interne
-              </td>
-            </tr>
-            <tr className='offer--container--table--body--row'>
-              <td className='offer--container--table--body--row--content'>
-                Clustering des clients
-              </td>
-              <td className='offer--container--table--body--row--content'>
-                Commerce
-              </td>
-              <td className='offer--container--table--body--row--content'>
-                Interne
-              </td>
-            </tr>
-            <tr className='offer--container--table--body--row'>
-              <td className='offer--container--table--body--row--content'>
-                Création d’un environnement Big Data dans le cloud
-              </td>
-              <td className='offer--container--table--body--row--content'>
-                Commerce
-              </td>
-              <td className='offer--container--table--body--row--content'>
-                Interne
-              </td>
-            </tr>
-            <tr className='offer--container--table--body--row'>
-              <td className='offer--container--table--body--row--content'>
-                Détermination des pays à plus fort potentiel pour des solutions d’e-learning
-              </td>
-              <td className='offer--container--table--body--row--content'>
-                Éducation & formation
-              </td>
-              <td className='offer--container--table--body--row--content'>
-                Interne
+                NA
               </td>
             </tr>
           </tbody>
@@ -416,6 +555,7 @@ const ConduiteDeProjets = () => {
           src={img3}
         />
       </div>
+
       <div className='offer--link'>
         <p className='offer--link--text'>
           Besoin d'informations ? Contactez nous
