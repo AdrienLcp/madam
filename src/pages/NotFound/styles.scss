@@ -1,0 +1,87 @@
+@use '../../styles/vars';
+
+.not-found {
+  width: 100vw;
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &--title {
+    font-size: 5em;
+    font-weight: bold;
+    margin-bottom: 3rem;
+    color: vars.$mainColor;
+  }
+
+  &--span {
+    margin-bottom: 5rem;
+  }
+
+  &--button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &--icon {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: vars.$mainColor;
+      padding: 0.8em;
+
+      &--img {
+        height: 100%;
+      }
+    }
+
+    &--label {
+      margin-top: 0.5em;
+      font-size: 0.7em;
+    }
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .not-found {
+    &--title {
+      font-size: 10em;
+      margin-bottom: 6rem;
+    }
+
+    &--span {
+      font-size: 2em;
+      margin-bottom: 8rem;
+    }
+
+    &--button {
+      &--icon {
+        width: 60px;
+        height: 60px;
+        z-index: 2;
+      }
+
+      &--label {
+        font-size: 1em;
+        position: absolute;
+        opacity: 0;
+        transition: .3s;
+        transform: translateY(1em);
+        z-index: 1;
+      }
+
+      &:hover {
+        .not-found--button--icon {
+          background: vars.$hover;
+        }
+
+        .not-found--button--label {
+          opacity: 1;
+          transform: translateY(3em);
+        }
+      }
+    }
+  }
+}
