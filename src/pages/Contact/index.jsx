@@ -5,6 +5,8 @@ import './styles.scss';
 
 import send from '../../media/contact/send.svg';
 import success from '../../media/contact/success.svg';
+import linkedin from '../../media/contact/linkedin.svg';
+import facebook from '../../media/contact/facebook.svg';
 
 const Contact = () => {
 
@@ -21,6 +23,35 @@ const Contact = () => {
         <h4 className='contact--title'>
           Contact
         </h4>
+
+        <section className='contact--links'>
+          <a
+            className='contact--links--img'
+            rel='noreferrer'
+            target='_blank'
+            href='https://www.linkedin.com/company/madam-conseil/'
+          >
+            <img
+              className='contact--links--img--icon'
+              alt='Lien vers la page Linkedin de MaDaM'
+              src={linkedin}
+            />
+          </a>
+
+          <a 
+            className='contact--links--img'
+            rel='noreferrer'
+            target='_blank'
+            href='https://www.facebook.com/madamconseil'
+          >
+            <img
+              className='contact--links--img--icon'
+              alt='Lien vers la page Facebook de MaDaM'
+              src={facebook}
+            />
+          </a>
+        </section>
+
         <section className='contact--container'>
           <section className='contact--container--success'>
             <div className='contact--container--success--icon'>
@@ -34,11 +65,6 @@ const Contact = () => {
               Message envoyé !
             </p>
           </section>
-
-
-
-
-
         </section>
       </div>
     );
@@ -50,6 +76,35 @@ const Contact = () => {
       <h4 className='contact--title'>
         Contact
       </h4>
+
+      <section className='contact--links'>
+        <a
+          className='contact--links--img'
+          rel='noreferrer'
+          target='_blank'
+          href='https://www.linkedin.com/company/madam-conseil/'
+        >
+          <img
+            className='contact--links--img--icon'
+            alt='Lien vers la page Linkedin de MaDaM'
+            src={linkedin}
+          />
+        </a>
+
+        <a 
+          className='contact--links--img'
+          rel='noreferrer'
+          target='_blank'
+          href='https://www.facebook.com/madamconseil'
+        >
+          <img
+            className='contact--links--img--icon'
+            alt='Lien vers la page Facebook de MaDaM'
+            src={facebook}
+          />
+        </a>
+      </section>
+
       <section className='contact--container'>
         <form
           className='contact--container--form'
@@ -96,16 +151,6 @@ const Contact = () => {
             </p>
           </button>
         </form>
-
-
-
-
-
-
-
-
-
-        
       </section>
     </div>
   );
